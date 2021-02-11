@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.7.3/tailwind.min.css"
+    integrity="sha512-jJ4q433srLv86rVtrIu5Tco3NLLZ81Y4kkgr7jqm19oZG7cutkYOSSVLqQJ0I4niSm/5X5B4BeEbnBRvFfhWLg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="main.css">
+  <title>GitHub Finder</title>
+</head>
+
+<body>
+  <h1 class="text-3xl text-center mt-8 font-semibold text-white">GitHub Finder</h1>
+  <form class="w-full flex justify-center mt-12">
+    <input
+    class="bg-white transition focus:outline-none focus:shadow-outline duration-150 border rounded-full px-4 py-3 w-2/5" type="text" placeholder="Type a GitHub Username">
+    <button class="bg-gray-600 rounded px-6 py-2 mx-4 transition hover:bg-white duration-150 text-lg" id="search-btn">Search</button>
+  </form>
+  
+  <div class="error__wrapper w-10/12 mt-12 mx-auto flex justify-center items-center"></div>
+  
+  <div class="user__info-wrapper w-10/12 mt-12 flex justify-center"></div>
+
+  <div class="user__repo-wrapper"></div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
